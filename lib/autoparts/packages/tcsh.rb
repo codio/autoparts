@@ -3,23 +3,25 @@
 
 module Autoparts
   module Packages
-    class Tig < Package
-      name 'tig'
-      version '1.2.1'
-      description 'Tig: An ncurses-based text-mode interface for git'
-      category Category::DEVELOPMENT_TOOLS
+    class Tcsh < Package
+      name 'tcsh'
+      version '6.18.01'
+      description 'tcsh: TENEX C Shell, an enhanced version of Berkeley csh, usable both as an interactive login shell and a shell script command processor'
+      category Category::SHELLS
 
-      source_url 'http://jonas.nitro.dk/tig/releases/tig-1.2.1.tar.gz'
-      source_sha1 '5755bae7342debf94ef33973e0eaff6207e623dc'
+      source_url 'ftp://ftp.astron.com/pub/tcsh/tcsh-6.18.01.tar.gz'
+      source_sha1 'eee2035645737197ff8059c84933a75d23cd76f9'
       source_filetype 'tar.gz'
 
       def compile
         Dir.chdir(name_with_version) do
-          args = [
-            "--prefix=#{prefix_path}",
-            "--sysconfdir=#{Path.etc}"
+          args = %W[
+            --prefix=#{prefix_path}
+            --sysconfdir=#{Path.etc}
+            --disable-dependency-tracking
           ]
           execute './configure', *args
+          execute 'make'
         end
       end
 

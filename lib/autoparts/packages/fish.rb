@@ -3,29 +3,30 @@
 
 module Autoparts
   module Packages
-    class Tmux < Package
-      name 'tmux'
-      version '1.9a'
-      description 'Tmux: a terminal multiplexer that lets you switch easily between several programs in one terminal.'
-      category Category::UTILITIES
+    class Fish < Package
+      name 'fish'
+      version '2.1.0'
+      description 'fish: A friendly interactive shell'
+      category Category::SHELLS
 
-      source_url 'http://downloads.sourceforge.net/tmux/tmux-1.9a.tar.gz'
-      source_sha1 '815264268e63c6c85fe8784e06a840883fcfc6a2'
+      source_url 'http://fishshell.com/files/2.1.0/fish-2.1.0.tar.gz'
+      source_sha1 'b1764cba540055cb8e2a96a7ea4c844b04a32522'
       source_filetype 'tar.gz'
 
       def compile
         Dir.chdir(name_with_version) do
-          args = [
-            "--prefix=#{prefix_path}",
-            "--sysconfdir=#{Path.etc}",
-            "--disable-dependency-tracking",
+          args = %W[
+            --prefix=#{prefix_path}
+            --sysconfdir=#{Path.etc}
           ]
           execute './configure', *args
+          execute 'make'
         end
       end
 
       def install
         Dir.chdir(name_with_version) do
+          bin_path.mkpath
           execute 'make install'
         end
       end
