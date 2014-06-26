@@ -4,31 +4,21 @@
 module Autoparts
   module Packages
     class Rust < Package
-      name 'rust'
-      version '0.10'
+      name 'rust-nightly'
+      version '0.11.0-pre-nightly-05ca9f7_2014-06-24'
       description 'Rust: A safe, concurrent, practical language'
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'http://static.rust-lang.org/dist/rust-0.10.tar.gz'
-      source_sha1 '20460730047ca6694eeb780d990f566572c32c43'
+      source_url 'http://static.rust-lang.org/dist/rust-nightly-x86_64-unknown-linux-gnu.tar.gz'
+      source_sha1 'e20ad572b5266b915ffe0142322c256927f15a4e'
       source_filetype 'tar.gz'
 
       def install
-        Dir.chdir('rust-0.10') do
-          execute 'make', 'install'
+        Dir.chdir('rust-nightly-x86_64-unknown-linux-gnu') do
+          execute './install.sh', "--prefix=#{prefix_path}"
         end
       end
 
-      def compile
-        Dir.chdir('rust-0.10') do
-          args = [
-            "--prefix=#{prefix_path}"
-          ]
-
-          execute './configure', *args
-          execute 'make'
-        end
-      end
     end
   end
 end
