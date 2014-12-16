@@ -5,7 +5,7 @@ module Autoparts
   module Packages
     class Composer < Package
       name 'composer'
-      version '1.0.0-20141216'
+      version '1.0-dev'
       description 'Composer: PHP5 Dependency management'
       category Category::DEVELOPMENT_TOOLS
 
