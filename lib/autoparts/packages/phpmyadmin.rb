@@ -2,10 +2,10 @@ module Autoparts
   module Packages
     class PhpMyAdmin < Package
       name 'phpmyadmin'
-      version '4.1.7'
+      version '4.3.2'
       description 'phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web'
-      source_url 'http://downloads.sourceforge.net/project/phpmyadmin/phpMyAdmin/4.1.7/phpMyAdmin-4.1.7-all-languages.tar.gz'
-      source_sha1 '926c9261e698612e61c725c13262d951bada9cd3'
+      source_url 'http://sourceforge.net/projects/phpmyadmin/files/phpMyAdmin/4.3.2/phpMyAdmin-4.3.2-all-languages.tar.gz'
+      source_sha1 'ca99f59a866480c457f7d07fbe1c8f81a87c631e'
       source_filetype 'tar.gz'
       category Category::WEB_DEVELOPMENT
 
@@ -16,7 +16,7 @@ module Autoparts
 
       def install
           myadmin_path.mkpath
-        Dir.chdir('phpMyAdmin-4.1.7-all-languages') do
+        Dir.chdir('phpMyAdmin-4.3.2-all-languages') do
           execute 'cp', '-r', '.', myadmin_path
         end
       end

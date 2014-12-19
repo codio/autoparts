@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Leiningen < Package
       name 'leiningen'
-      version '2.3.2'
+      version '2.5.0'
       description 'Leiningen: A build automation and dependency management tool for Clojure'
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'https://leiningen.s3.amazonaws.com/downloads/leiningen-2.3.2-standalone.jar'
-      source_sha1 'ed6f93be75c796408544042cfd26699d45b49725'
+      source_url 'https://github.com/technomancy/leiningen/releases/download/2.5.0/leiningen-2.5.0-standalone.jar'
+      source_sha1 '7514d137f0f4ff226c0171df47a3422b1ecfa80a'
       source_filetype 'jar'
 
       def install
@@ -18,7 +18,7 @@ module Autoparts
         execute 'mv', archive_filename, prefix_path
 
         puts "=> Downloading the lein script..."
-        download 'https://raw.github.com/technomancy/leiningen/2.3.2/bin/lein-pkg', tmp_lein_script_path, '4a23609f085add58bc28fb0669a175fe2b26f26f'
+        download 'https://raw.github.com/technomancy/leiningen/2.5.0/bin/lein-pkg', tmp_lein_script_path, '70853aaf12735e6b468f42e0a119f9991c73cfe6'
 
         bin_path.mkpath
         execute 'mv', tmp_lein_script_path, lein_executable_path

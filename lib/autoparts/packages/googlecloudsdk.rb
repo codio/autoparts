@@ -10,7 +10,7 @@ module Autoparts
       category Category::UTILITIES
 
       source_url 'https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz'
-      source_sha1 '77edb58fcda6febf340f1cebaaadd07fb1f14fe2'
+      source_sha1 '4243a12572900ba388bff647c96e0db510094e7a'
       source_filetype 'tar.gz'
 
 

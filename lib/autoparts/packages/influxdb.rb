@@ -5,11 +5,11 @@ module Autoparts
   module Packages
     class InfluxDB < Package
       name 'influxdb'
-      version '0.5.0'
+      version '0.8.7'
       description 'InfluxDB: An open-source distributed time series database'
       # we are using a precompiled version of influxdb
-      source_url 'http://s3.amazonaws.com/influxdb/influxdb-0.5.0.amd64.tar.gz'
-      source_sha1 'fa85c0ef67c44a0cec1330b296b9a5bb4569d8da'
+      source_url 'http://s3.amazonaws.com/influxdb/influxdb-0.8.7.amd64.tar.gz'
+      source_sha1 '7088b6ee68e1795a945115f54a5f6030af30d9cb'
       source_filetype 'tar.gz'
       category Category::DATA_STORES
 
@@ -69,6 +69,7 @@ module Autoparts
         end
         false
       end
+      
 
       def influxdb_path
         bin_path + "influxdb"

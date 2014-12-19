@@ -2,12 +2,12 @@ module Autoparts
   module Packages
     class Scons < Package
       name 'scons'
-      version '2.3.1'
+      version '2.3.4'
       description 'SCons: an Open Source software construction tool—that is, a next-generation build tool. '
       category Category::DEVELOPMENT_TOOLS
 
-      source_url 'https://downloads.sourceforge.net/scons/scons-2.3.1.tar.gz'
-      source_sha1 '775e715e49fe5fd8e1d29551a296fdc9267509e7'
+      source_url 'http://sourceforge.net/projects/scons/files/scons/2.3.4/scons-2.3.4.tar.gz'
+      source_sha1 '8c55f8c15221c1b3536a041d46056ddd7fa2d23a'
       source_filetype 'tar.gz'
 
       def install

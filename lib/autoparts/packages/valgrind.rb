@@ -2,12 +2,12 @@ module Autoparts
   module Packages
     class Valgrind < Package
       name 'valgrind'
-      version '3.10.0'
+      version '3.10.1'
       description 'Valgrind: a system for debugging and profiling Linux programs.'
       category Category::DEVELOPMENT_TOOLS
 
-      source_url 'http://valgrind.org/downloads/valgrind-3.10.0.tar.bz2'
-      source_sha1 'aec0b8cd042ec36c8cce4f6027b98627ab202f26'
+      source_url 'http://www.valgrind.org/downloads/valgrind-3.10.1.tar.bz2'
+      source_sha1 '15518427de842547ffa84eff8b2b67f3b16581a8'
       source_filetype 'tar.bz2'
 
       def compile

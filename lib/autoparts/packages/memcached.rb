@@ -5,16 +5,16 @@ module Autoparts
   module Packages
     class Memcached < Package
       name 'memcached'
-      version '1.4.15'
+      version '1.4.21'
       description 'Memcached: An open-source, high-performance memory object caching system'
       category Category::DATA_STORES
 
-      source_url 'http://memcached.googlecode.com/files/memcached-1.4.15.tar.gz'
-      source_sha1 '12ec84011f408846250a462ab9e8e967a2e8cbbc'
+      source_url 'http://www.memcached.org/files/memcached-1.4.21.tar.gz'
+      source_sha1 'ab10c46dd9f5d4401872d9670e575afa5bc7d66f'
       source_filetype 'tar.gz'
 
       def compile
-        Dir.chdir('memcached-1.4.15') do
+        Dir.chdir('memcached-1.4.21') do
           args = [
             "--prefix=#{prefix_path}",
             "--bindir=#{bin_path}",
@@ -36,7 +36,7 @@ module Autoparts
       end
 
       def install
-        Dir.chdir('memcached-1.4.15') do
+        Dir.chdir('memcached-1.4.21') do
           bin_path.mkpath
           execute 'make install'
           execute 'cp', 'scripts/memcached-tool', bin_path

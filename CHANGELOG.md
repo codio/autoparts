@@ -3,6 +3,49 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+###December 19th, 2014
+- **Improvement**
+  - clasp updated to 3.1.1
+  - fish updated to 2.1.1
+  - freepascal updated to 2.6.4
+  - freetype updated to 2.5.4
+  - glib updated to 2.43.2
+  - googleappengine updated to 1.19.17
+  - googleappenginego updated to 1.19.7
+  - googleappenginejava updated to 1.19.7
+  - grails updated to 2.4.4
+  - gringo updated to 4.4.0
+  - groovy updated to 2.3.8
+  - image_magick updated to 6.9.0-0
+  - influxdb updated to 0.8.7
+  - jruby updated to 1.7.17
+  - leiningen updated to 2.5.0
+  - libffi updated to 3.2.1
+  - libpcap updated to 1.6.2
+  - libtool updated to 2.4.4
+  - lua updated to 5.2.3
+  - mc updated to 4.8.13
+  - memcached updated to 1.5.21
+  - mono updated to 3.10.0
+  - openldap updated to 2.4.40
+  - phantomjs updated to 1.9.8
+  - phpmyadmin updated to 4.3.2
+  - protobuf updated to 2.6.0
+  - pypy updated to 2.4.0
+  - r_base updated to 3.1.2
+  - rabbitmq updated to 3.4.2
+  - racket updated to 6.1.1
+  - re2c updated to 0.13.7.5
+  - scons updated to 2.3.4
+  - setuptools updated to 8.0.4
+  - sqlite3 updated to 3.8.7.4
+  - swig updated to 3.0.2
+  - the_silver_searcher updted to 0.27.0
+  - tig updated to 2.0.3
+  - tomcat updated to 8.0.15
+  - valgrind updated to 3.10.1
+  - zeromq updated to 4.0.5
+  
 ###December 16th, 2014
 - **Improvement**
   - composer updated to the latest dev 1.0

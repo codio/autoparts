@@ -2,10 +2,10 @@ module Autoparts
   module Packages
     class Grails < Package
       name 'grails'
-      version '2.4.3'
+      version '2.4.4'
       description 'Grails: an Open Source, full stack, web application framework for the JVM.'
-      source_url 'http://dist.springframework.org.s3.amazonaws.com/release/GRAILS/grails-2.4.3.zip'
-      source_sha1 '729cc9f2493960c3a644f29208d3b8a8f31275be'
+      source_url 'http://dist.springframework.org.s3.amazonaws.com/release/GRAILS/grails-2.4.4.zip'
+      source_sha1 'db2285d4a803b976753f28f5cb38c5a66c711600'
       source_filetype 'zip'
       category Category::DEVELOPMENT_TOOLS
 

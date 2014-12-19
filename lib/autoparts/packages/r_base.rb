@@ -2,10 +2,10 @@ module Autoparts
   module Packages
     class RBase < Package
       name 'r_base'
-      version '3.0.3'
+      version '3.1.2'
       description 'R: A free software programming language and software environment for statistical computing and graphics'
-      source_url 'http://cran.stat.ucla.edu/src/base/R-3/R-3.0.3.tar.gz'
-      source_sha1 '82e83415d27a2fbbdcacb41c4aa14d8b36fdf470'
+      source_url 'http://cran.stat.ucla.edu/src/base/R-3/R-3.1.2.tar.gz'
+      source_sha1 '93809368e5735a630611633ac1fa99010020c5d6'
       source_filetype 'tar.gz'
       category Category::PROGRAMMING_LANGUAGES
 

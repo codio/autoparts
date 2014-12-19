@@ -6,17 +6,17 @@ module Autoparts
   module Packages
     class Setuptools < Package
       name 'setuptools'
-      version '5.7'
+      version '8.0.4'
       description 'Setuptools: Easily download, build, install, upgrade, and uninstall Python packages'
-      source_url 'https://pypi.python.org/packages/source/s/setuptools/setuptools-5.7.tar.gz'
-      source_sha1 '807552212cda409b074e0e55630c3801a39eb198'
+      source_url 'https://pypi.python.org/packages/source/s/setuptools/setuptools-8.0.4.tar.gz'
+      source_sha1 '86a6b1dab3afe3aad4a2f1f8dcfc0f9970b7d781'
       source_filetype 'tgz'
       category Category::DEVELOPMENT_TOOLS
 
       depends_on "python2"
 
       def compile
-        Dir.chdir("setuptools-5.7") do
+        Dir.chdir("setuptools-8.0.4") do
           args = [
             "-s", "setup.py",
             "--no-user-cfg",
@@ -53,7 +53,7 @@ module Autoparts
       def required_files
         [
           "easy-install.pth",
-          "setuptools-5.7-py2.7.egg",
+          "setuptools-8.0.4-py2.7.egg",
           "setuptools.pth",
         ]
       end

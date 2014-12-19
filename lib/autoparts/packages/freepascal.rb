@@ -2,16 +2,16 @@ module Autoparts
   module Packages
     class FreePascal < Package
       name 'freepascal'
-      version '2.6.2'
+      version '2.6.4'
       description 'Free Pascal: An open source Pascal compiler for Pascal and Object Pascal'
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'https://downloads.sourceforge.net/project/freepascal/Linux/2.6.2/fpc-2.6.2.x86_64-linux.tar'
-      source_sha1 'f31c09545b727396f6f2858d12dcebdd25c5c16f'
+      source_url 'http://sourceforge.net/projects/freepascal/files/Linux/2.6.4/fpc-2.6.4.x86_64-linux.tar'
+      source_sha1 'bfba781eac7177e6bf36522859cc5ca7251d6f5e'
       source_filetype 'tar'
 
       def install
-        Dir.chdir('fpc-2.6.2.x86_64-linux') do
+        Dir.chdir('fpc-2.6.4.x86_64-linux') do
           prefix_path.mkpath
           File.open('answers.sh', 'w') { |f| f << answers_file }
           execute 'chmod', '+x', 'answers.sh'

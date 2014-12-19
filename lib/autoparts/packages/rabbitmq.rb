@@ -2,16 +2,16 @@ module Autoparts
   module Packages
     class RabbitMQ < Package
       name 'rabbitmq'
-      version '3.2.3'
+      version '3.4.2'
       description 'AMQP server written in Erlang'
-      source_url 'https://www.rabbitmq.com/releases/rabbitmq-server/v3.2.3/rabbitmq-server-generic-unix-3.2.3.tar.gz'
-      source_sha1 '3a66779c6387499aff1899a4761236bb7ee4e404'
+      source_url 'http://www.rabbitmq.com/releases/rabbitmq-server/v3.4.2/rabbitmq-server-generic-unix-3.4.2.tar.gz'
+      source_sha1 'e107587c7ff155fc391e55ddfdf441469e0bd783'
       source_filetype 'tar.gz'
       category Category::DATA_STORES
       depends_on 'erlang'
 
       def install
-        Dir.chdir('rabbitmq_server-3.2.3/') do
+        Dir.chdir('rabbitmq_server-3.4.2/') do
           prefix_path.mkpath
           execute 'rm', '-rf', 'INSTALL'
           execute "mv * #{prefix_path}"

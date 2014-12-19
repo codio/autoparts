@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Swig < Package
       name 'swig'
-      version '2.0.11'
+      version '3.0.2'
       description 'Swig: An interface compiler that connects programs written in C and C++ with scripting languages such as Perl, Python, Ruby, and Tcl.'
       category Category::DEVELOPMENT_TOOLS
 
-      source_url 'http://downloads.sourceforge.net/project/swig/swig/swig-2.0.11/swig-2.0.11.tar.gz'
-      source_sha1 'd3bf4e78824dba76bfb3269367f1ae0276b49df9'
+      source_url 'http://sourceforge.net/projects/swig/files/swig/swig-3.0.2/swig-3.0.2.tar.gz'
+      source_sha1 'e695a14acf39b25f3ea2d7303e23e39dfe284e31'
       source_filetype 'tar.gz'
 
       def compile

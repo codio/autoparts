@@ -2,12 +2,12 @@ module Autoparts
   module Packages
     class Libpcap < Package
       name 'libpcap'
-      version '1.5.3'
+      version '1.6.2'
       description 'Libpcap: provides a portable framework for low-level network monitoring. Applications include network statistics collection, security monitoring, network debugging, etc.'
       category Category::UTILITIES
 
-      source_url 'http://www.tcpdump.org/release/libpcap-1.5.3.tar.gz'
-      source_sha1 '0d1502d1e46f088f5432d9d16e7fc2619cc33380'
+      source_url 'http://www.tcpdump.org/release/libpcap-1.6.2.tar.gz'
+      source_sha1 '7efc7d56f4959de8bb33a92de2e15d92105eac32'
       source_filetype 'tar.gz'
 
       def compile

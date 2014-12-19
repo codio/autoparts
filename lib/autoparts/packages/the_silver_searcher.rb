@@ -5,22 +5,22 @@ module Autoparts
   module Packages
     class TheSilverSearcher < Package
       name 'the_silver_searcher'
-      version '0.18.1'
+      version '0.27.0'
       description 'The Silver Searcher: A code-searching tool similar to ack, with focus on speed'
       category Category::UTILITIES
 
-      source_url 'https://github.com/ggreer/the_silver_searcher/archive/0.18.1.tar.gz'
-      source_sha1 'efffa28a7e15261dfc027cf94653459a4db0dd92'
+      source_url 'http://geoff.greer.fm/ag/releases/the_silver_searcher-0.27.0.tar.gz'
+      source_sha1 '7efaf6d9bae9c180f6f0949f6df12150d5f820e5'
       source_filetype 'tar.gz'
 
       def install
-        Dir.chdir('the_silver_searcher-0.18.1') do
+        Dir.chdir('the_silver_searcher-0.27.0') do
           execute 'make', 'install'
         end
       end
 
       def compile
-        Dir.chdir('the_silver_searcher-0.18.1') do
+        Dir.chdir('the_silver_searcher-0.27.0') do
           execute 'aclocal'
           execute 'autoconf'
           execute 'autoheader'

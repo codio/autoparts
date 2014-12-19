@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Tig < Package
       name 'tig'
-      version '1.2.1'
+      version '2.0.3'
       description 'Tig: An ncurses-based text-mode interface for git'
       category Category::DEVELOPMENT_TOOLS
 
-      source_url 'http://jonas.nitro.dk/tig/releases/tig-1.2.1.tar.gz'
-      source_sha1 '5755bae7342debf94ef33973e0eaff6207e623dc'
+      source_url 'http://jonas.nitro.dk/tig/releases/tig-2.0.3.tar.gz'
+      source_sha1 '762dff87ea8691b7c1b5cfdaf077e367c60ef375'
       source_filetype 'tar.gz'
 
       def compile

@@ -2,14 +2,14 @@ module Autoparts
   module Packages
     class Glib < Package
       name 'glib'
-      version '2.40.0'
+      version '2.43.2'
       description 'GLib: a general-purpose utility library, which provides many useful data types, macros, type conversions, string utilities, file utilities, a mainloop abstraction, and so on.'
       category Category::LIBRARIES
 
       depends_on 'libffi'
 
-      source_url 'http://ftp.gnome.org/pub/gnome/sources/glib/2.40/glib-2.40.0.tar.xz'
-      source_sha1 '44e1442ed4d1bf3fa89138965deb35afc1335a65'
+      source_url 'http://ftp.acc.umu.se/pub/gnome/sources/glib/2.43/glib-2.43.2.tar.xz'
+      source_sha1 'db984c954e85f164d2e2f7968b9f3bb1811e4127'
       source_filetype 'tar.xz'
 
       def compile

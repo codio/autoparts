@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Freetype < Package
       name 'freetype'
-      version '2.5.3'
+      version '2.5.4'
       description 'Freetype: a freely available software library to render fonts.'
       category Category::LIBRARIES
 
-      source_url 'http://download.savannah.gnu.org/releases/freetype/freetype-2.5.3.tar.gz'
-      source_sha1 'd4a17b42505b23dab022f877e1849940aa3b64f3'
+      source_url 'http://download.savannah.gnu.org/releases/freetype/freetype-2.5.4.tar.gz'
+      source_sha1 'e2731e7a083efbeb46247b699aa9722438deeb5e'
       source_filetype 'tar.gz'
 
       def compile
