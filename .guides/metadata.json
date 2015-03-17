@@ -1,0 +1,232 @@
+{
+ "sections": [
+  {
+   "id": "6fae476e-89d7-2802-18e7-32768670ede7",
+   "title": "Building your own Box Part",
+   "files": [],
+   "layout": "2-panels-tree",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Building-your-own-Box-Part-6fae.md"
+  },
+  {
+   "id": "892b2bb8-3035-df98-3435-95bb3942f43a",
+   "title": "Development Process Overview",
+   "files": [],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Development-Process-Overview-892b.md"
+  },
+  {
+   "id": "96ba8e99-6e8c-9ece-c932-e59f5cd04c16",
+   "title": "Dev setup script",
+   "files": [],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Dev-setup-script-96ba.md"
+  },
+  {
+   "id": "279c5b52-34f5-2f26-c3b8-5a2f318fc6d",
+   "title": "Class definition",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "module Autoparts",
+     "lineCount": 3,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Class-definition-279c.md"
+  },
+  {
+   "id": "44b4d32-7414-f208-3b8d-a789b14d4fe8",
+   "title": "Descriptions & Version",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "name 'mysql'",
+     "lineCount": 7,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Descriptions---Version-44b4.md"
+  },
+  {
+   "id": "5ad04e7f-41af-cab-99ab-89bacfb9ed98",
+   "title": "Source",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "source_url",
+     "lineCount": 10,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Source-5ad0.md"
+  },
+  {
+   "id": "c08bc2b8-39bb-abc4-ef87-bb12de51991a",
+   "title": "Dependencies",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "depends_on",
+     "lineCount": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Dependencies-c08b.md"
+  },
+  {
+   "id": "fd03e84c-b75e-9af1-c287-7f831ef818c5",
+   "title": "Figuring out the directory name",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "Dir.chdir('mysql-5.6.13')",
+     "lineCount": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Figuring-out-the-directory-name-fd03.md"
+  },
+  {
+   "id": "915d77fd-54dd-fafb-37a1-cb723b68bee",
+   "title": "Methods",
+   "files": [],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Methods-915d.md"
+  },
+  {
+   "id": "7660c0cc-3e05-1ed3-eb5-98a6e8183f5f",
+   "title": "Compilation",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "def compile",
+     "lineCount": 22,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Compilation-7660.md"
+  },
+  {
+   "id": "b4ba7e74-e4a9-5789-f424-ffeae4d2318d",
+   "title": "Installation",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "def install",
+     "lineCount": 9,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Installation-b4ba.md"
+  },
+  {
+   "id": "809f86c2-ceef-40ff-e843-dcd764278bd4",
+   "title": "Post Installation tasks",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "def post_install",
+     "lineCount": 14,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Post-Installation-tasks-809f.md"
+  },
+  {
+   "id": "8d203bd4-b6b3-f297-9a0-a8ac6d6b17c0",
+   "title": "Exporting environment variables",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "def required_env",
+     "lineCount": 5,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Exporting-environment-variables-8d20.md"
+  },
+  {
+   "id": "cf823099-72b-dbb6-6d36-3b34e74f9711",
+   "title": "Services - start, stop & running",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "def start",
+     "lineCount": 13,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Services---start--stop---running-cf82.md"
+  },
+  {
+   "id": "262da56-af2-c9ad-9cf1-fae253432d82",
+   "title": "Post installation message",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "def tips",
+     "lineCount": 12,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Post-installation-message-262d.md"
+  },
+  {
+   "id": "755093b2-8a18-3ae-926-61d4ff496cf7",
+   "title": "Uninstalling & Purging",
+   "files": [
+    {
+     "path": "docs/example-part.rb",
+     "ref": "def purge",
+     "lineCount": 3,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Uninstalling---Purging-7550.md"
+  }
+ ]
+}

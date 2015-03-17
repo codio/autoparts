@@ -1,0 +1,1 @@
+You can define environment variables as shown on the left.
