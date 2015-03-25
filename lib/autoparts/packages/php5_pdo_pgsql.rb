@@ -10,7 +10,7 @@ module Autoparts
       category Category::WEB_DEVELOPMENT
 
       depends_on 'php5'
-      depends_on 'postgresql'
+      depends_on 'postgresql9.3'
 
       def php_extension_name
         'pdo_pgsql'

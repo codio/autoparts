@@ -3,17 +3,21 @@
 
 module Autoparts
   module Packages
-    class PostgreSQL < Package
-      name 'postgresql'
-      version '9.3.5'
+    class PostgreSQL94 < Package
+      name 'postgresql9.4'
+      version '9.4.1'
       description "PostgreSQL: The world's most advanced open-source database system"
       category Category::DATA_STORES
 
-      source_url 'https://ftp.postgresql.org/pub/source/v9.3.5/postgresql-9.3.5.tar.gz'
-      source_sha1 'f5a888aaba98d637fa6cdf009aebcda10d53d038'
+      source_url 'https://ftp.postgresql.org/pub/source/v9.4.1/postgresql-9.4.1.tar.gz'
+      source_sha1 'ea9fd6930146526369540dc2ddd38b58cfebc6aa'
       source_filetype 'tar.gz'
 
       depends_on 'uuid'
+      
+      def name_with_version
+        "postgresql-#{version}"
+      end
       
       def compile
         Dir.chdir(name_with_version) do
