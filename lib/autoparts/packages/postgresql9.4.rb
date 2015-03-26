@@ -40,15 +40,15 @@ module Autoparts
             '--with-openssl',
             '--with-ossp-uuid',
           ]
-
+          
           execute './configure', *args
-          execute 'make world'
+          execute 'make'
         end
       end
 
       def install
         Dir.chdir(name_with_version) do
-          execute 'make install-world'
+          execute 'make install'
         end
       end
 
@@ -113,10 +113,10 @@ module Autoparts
       def tips
         <<-EOS.unindent
           To start the server:
-            $ parts start postgresql
+            $ parts start postgresql9.4
 
           To stop the server:
-            $ parts stop postgresql
+            $ parts stop postgresql9.4
 
           To connect to the server:
             $ psql
