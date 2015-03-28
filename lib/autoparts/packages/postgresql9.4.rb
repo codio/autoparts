@@ -42,13 +42,14 @@ module Autoparts
           ]
           
           execute './configure', *args
-          execute 'make'
+          execute 'rm -rf /home/codio/.parts/tmp/postgresql-9.4.1/postgresql-9.4.1/contrib/test_decoding/specs'
+          execute 'make world'
         end
       end
 
       def install
         Dir.chdir(name_with_version) do
-          execute 'make install'
+          execute 'make install-world'
         end
       end
 
