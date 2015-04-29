@@ -3,8 +3,8 @@
 
 module Autoparts
   module Packages
-    class PostgreSQL < Package
-      name 'postgresql'
+    class PostgreSQL93 < Package
+      name 'postgresql9.3'
       version '9.3.5'
       description "PostgreSQL: The world's most advanced open-source database system"
       category Category::DATA_STORES
@@ -14,6 +14,10 @@ module Autoparts
       source_filetype 'tar.gz'
 
       depends_on 'uuid'
+      
+      def name_with_version
+        "postgresql-#{version}"
+      end
       
       def compile
         Dir.chdir(name_with_version) do
