@@ -9,14 +9,14 @@ module Autoparts
       extend ActiveSupport::Concern
 
       included do
-        self.version '5.5.15'
-        self.source_url 'http://us.php.net/get/php-5.5.15.tar.gz/from/this/mirror'
-        self.source_sha1 'd9df11b97a9f1c686194e91165602f47e3bd74e6'
+        self.version '5.6.11'
+        self.source_url 'http://us.php.net/get/php-5.6.11.tar.gz/from/this/mirror'
+        self.source_sha1 'ed572049e6be08a7595d722986d29ff9a7f636e9'
         self.source_filetype  'tar.gz'
         self.depends_on 'php5'
 
         def php_extension_dir
-          "php-5.5.15/ext/" + php_extension_name
+          "php-5.6.11/ext/" + php_extension_name
         end
 
 

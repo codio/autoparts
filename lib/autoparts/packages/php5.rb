@@ -5,17 +5,17 @@ module Autoparts
   module Packages
     class Php5 < Package
       name 'php5'
-      version '5.5.15'
+      version '5.6.11'
       description 'PHP 5.6: A popular general-purpose scripting language that is especially suited to web development. Prebuild extensions default + mbstring, mysql, sqlite3 and openssl'
       source_url 'http://php.net/get/php-5.6.11.tar.gz/from/this/mirror'
-      source_sha1 '85916b46c0d1f2a5315c84fb2773293f4084c3676ba4ed420d0432cbb60ff9d8'
+      source_sha1 'ed572049e6be08a7595d722986d29ff9a7f636e9'
       source_filetype 'tar.gz'
       category Category::WEB_DEVELOPMENT
 
       depends_on 'libmcrypt'
 
       def compile
-        Dir.chdir("php-5.5.15") do
+        Dir.chdir("php-5.6.11") do
           args = [
             "--with-mcrypt=#{get_dependency("libmcrypt").prefix_path}",
             # path
@@ -48,7 +48,7 @@ module Autoparts
       end
 
       def install
-        Dir.chdir("php-5.5.15") do
+        Dir.chdir("php-5.6.11") do
           execute 'make install'
           execute 'cp', 'php.ini-development', "#{lib_path}/php.ini"
         end
