@@ -2,10 +2,10 @@ module Autoparts
   module Packages
     class Mono < Package
       name 'mono'
-      version '3.10.0'
+      version '4.0.3'
       description 'Mono: a software platform designed to allow developers to easily create cross platform applications.'
-      source_url 'http://download.mono-project.com/sources/mono/mono-3.10.0.tar.bz2'
-      source_sha1 '74e43604ea48e941c39a43ebc153abee4ddba56c'
+      source_url 'http://download.mono-project.com/sources/mono/mono-4.0.3.20.tar.bz2'
+      source_sha1 'edd89c269fb0884fd002dc9a0bc09c8513c6efa0'
       source_filetype 'tar.bz2'
       category Category::PROGRAMMING_LANGUAGES
 
