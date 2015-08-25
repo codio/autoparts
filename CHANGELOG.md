@@ -5,6 +5,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
 ### August 25th, 2015
 - **Improvement**
   - mono to 4.0.3
+  - fsharp to 4.0
   
 ### April 29th, 2015
 - **Additions**
