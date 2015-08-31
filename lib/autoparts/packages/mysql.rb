@@ -5,15 +5,15 @@ module Autoparts
   module Packages
     class MySQL < Package
       name 'mysql'
-      version '5.6.15'
+      version '5.6.25'
       description "MySQL: The world's most popular open-source relational database"
       category Category::DATA_STORES
-      source_url 'http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.15.tar.gz'
-      source_sha1 '90b46f973930c27eb8586387de5dfbc2af04d3ed'
+      source_url 'http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.25.tar.gz'
+      source_sha1 'ace53481400a4ad363ee0453a547b8ba07582fd2'
       source_filetype 'tar.gz'
 
       def compile
-        Dir.chdir('mysql-5.6.15') do
+        Dir.chdir('mysql-5.6.25') do
           args = [
             '.',
             "-DCMAKE_INSTALL_PREFIX=#{prefix_path}",
@@ -36,7 +36,7 @@ module Autoparts
       end
 
       def install
-        Dir.chdir('mysql-5.6.15') do
+        Dir.chdir('mysql-5.6.25') do
           execute 'make install'
           execute 'rm', '-rf', mysql_server_path
           execute 'ln', '-s', "#{prefix_path}/support-files/mysql.server", "#{bin_path}/"

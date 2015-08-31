@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Apache2 < Package
       name 'apache2'
-      version '2.4.10'
+      version '2.4.16'
       description 'Apache Web Server: A cross-platform open-source HTTP server for modern operating systems'
       category Category::WEB_DEVELOPMENT
 
-      source_url 'http://www.us.apache.org/dist/httpd/httpd-2.4.10.tar.gz'
-      source_sha1 '9682272d16f0b2a7f1c7bbb9816283e3ab161d66'
+      source_url 'http://www.us.apache.org/dist/httpd/httpd-2.4.16.tar.gz'
+      source_sha1 'a7c6859293f59b5066b09275c69ded42bbbaf100'
       source_filetype 'tar.gz'
 
       depends_on 'apr'
