@@ -2,12 +2,12 @@ module Autoparts
   module Packages
     class Dropbox < Package
       name 'dropbox'
-      version '3.0.3'
+      version '3.8.4'
       description 'Dropbox: a cloud synchronization service.'
       category Category::UTILITIES
 
       source_url 'http://www.dropbox.com/download/?plat=lnx.x86_64'
-      source_sha1 '6d721bc8f73155e44e84cdecdc7940d40811d985'
+      source_sha1 '61258460e21b651a4da974557f87dc5c1c55053d'
       source_filetype 'tar.gz'
 
       def install
