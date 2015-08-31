@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class CMake < Package
       name 'cmake'
-      version '3.0.2'
+      version '3.3.0'
       description 'CMake: A cross-platform, open-source build system'
       category Category::DEVELOPMENT_TOOLS
 
-      source_url 'http://www.cmake.org/files/v3.0/cmake-3.0.2.tar.gz'
-      source_sha1 '379472e3578902a1d6f8b68a9987773151d6f21a'
+      source_url 'http://www.cmake.org/files/v3.3/cmake-3.3.0.tar.gz'
+      source_sha1 '7ffe0c67c25ee11d74cf7ab8022645151a0d72d2'
       source_filetype 'tar.gz'
 
       def compile
