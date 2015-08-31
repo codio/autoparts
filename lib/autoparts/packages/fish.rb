@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Fish < Package
       name 'fish'
-      version '2.1.2'
+      version '2.2.0'
       description 'fish: A friendly interactive shell'
       category Category::SHELLS
 
-      source_url 'http://fishshell.com/files/2.1.2/fish-2.1.2.tar.gz'
-      source_sha1 'f7f8d8d26721833be3458b8113c74b747296ec0b'
+      source_url 'http://fishshell.com/files/2.2.0/fish-2.2.0.tar.gz'
+      source_sha1 'cd7935b3301444afa88afb272d8db5542085c9f2'
       source_filetype 'tar.gz'
 
       def compile
