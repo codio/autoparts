@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Elasticsearch < Package
       name 'elasticsearch'
-      version '1.4.1'
+      version '1.7.0'
       description 'Elasticsearch: A flexible and powerful open source, distributed, real-time search and analytics engine'
       category Category::DATA_STORES
 
-      source_url 'https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.1.tar.gz'
-      source_sha1 'd2ddd4bb206d1aae5a5dae88649ca2b7ce2c235b'
+      source_url 'https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.0.tar.gz'
+      source_sha1 '619bb967f4c0eca0ec39b19fc862f16754dfef9a'
       source_filetype 'tar.gz'
 
       def install
