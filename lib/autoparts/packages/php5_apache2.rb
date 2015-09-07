@@ -5,10 +5,10 @@ module Autoparts
   module Packages
     class Php5Apache2 < Package
       name 'php5-apache2'
-      version '5.5.15'
+      version '5.6.12'
       description 'Php5 Apache: a php5 module for apache2.'
-      source_url 'http://us.php.net/get/php-5.5.15.tar.gz/from/this/mirror'
-      source_sha1 'd9df11b97a9f1c686194e91165602f47e3bd74e6'
+      source_url 'https://php.net/get/php-5.6.12.tar.gz/from/this/mirror'
+      source_sha1 '0912a4c7742752fdc1a8e77b9bf6c9202f0c3d2d'
       source_filetype 'tar.gz'
       category Category::WEB_DEVELOPMENT
 
@@ -18,7 +18,7 @@ module Autoparts
 
       def compile
         apache2_libphp5_path.unlink if apache2_libphp5_path.exist?
-        Dir.chdir("php-5.5.15") do
+        Dir.chdir("php-5.6.12") do
           args = [
             "--with-apxs2=#{apache2_dependency.bin_path + "apxs"}",
             "--with-mcrypt=#{get_dependency("libmcrypt").prefix_path}",
@@ -51,7 +51,7 @@ module Autoparts
       end
 
       def install
-        Dir.chdir("php-5.5.15") do
+        Dir.chdir("php-5.6.12") do
           lib_path.mkpath
           execute 'cp', 'php.ini-development', "#{lib_path}/php.ini"
           # force apache2 to rewrite its config to get a pristine config
