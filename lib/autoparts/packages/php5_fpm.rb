@@ -5,10 +5,10 @@ module Autoparts
   module Packages
     class Php5Fpm < Package
       name 'php5-fpm'
-      version '5.5.15'
+      version '5.6.12'
       description 'PHP5-FPM: an alternative PHP FastCGI implementation with some additional features (mostly) useful for heavy-loaded sites.'
-      source_url 'http://us.php.net/get/php-5.5.15.tar.gz/from/this/mirror'
-      source_sha1 'd9df11b97a9f1c686194e91165602f47e3bd74e6'
+      source_url 'https://php.net/get/php-5.6.12.tar.gz/from/this/mirror'
+      source_sha1 '0912a4c7742752fdc1a8e77b9bf6c9202f0c3d2d'
       source_filetype 'tar.gz'
       category Category::WEB_DEVELOPMENT
 
@@ -16,7 +16,7 @@ module Autoparts
       depends_on 'libmcrypt'
 
       def compile
-        Dir.chdir("php-5.5.15") do
+        Dir.chdir("php-5.6.12") do
           args = [
             "--with-mcrypt=#{get_dependency("libmcrypt").prefix_path}",
             # path
@@ -60,7 +60,7 @@ module Autoparts
 
       def install
         bin_path.mkpath
-        Dir.chdir("php-5.5.15") do
+        Dir.chdir("php-5.6.12") do
           execute 'cp', 'sapi/fpm/init.d.php-fpm', manage_script
           execute 'cp', 'sapi/fpm/php-fpm', bin_path
         end
