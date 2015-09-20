@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class PostgreSQL < Package
       name 'postgresql'
-      version '9.3.5'
+      version '9.4.4'
       description "PostgreSQL: The world's most advanced open-source database system"
       category Category::DATA_STORES
 
-      source_url 'https://ftp.postgresql.org/pub/source/v9.3.5/postgresql-9.3.5.tar.gz'
-      source_sha1 'f5a888aaba98d637fa6cdf009aebcda10d53d038'
+      source_url 'https://ftp.postgresql.org/pub/source/v9.4.4/postgresql-9.4.4.tar.gz'
+      source_sha1 'b0017802cb1f03d9eca5892b70e5173ed0c17539'
       source_filetype 'tar.gz'
 
       depends_on 'uuid'

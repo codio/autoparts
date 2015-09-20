@@ -2,17 +2,17 @@ module Autoparts
   module Packages
     class Apache2ModWsgi < Package
       name 'apache2_mod_wsgi'
-      version '3.4'
+      version '4.4.13'
       description 'Apache 2 WSGI module: an Apache module that provides a WSGI compliant interface for hosting Python based web applications within Apache.'
-      source_url 'https://modwsgi.googlecode.com/files/mod_wsgi-3.4.tar.gz'
-      source_sha1 '92ebc48e60ab658a984f97fd40cb71e0ae895469'
+      source_url 'https://github.com/GrahamDumpleton/mod_wsgi/archive/4.4.13.tar.gz'
+      source_sha1 '49a51375650e305af8ff795cc395ae88a1102197'
       source_filetype 'tar.gz'
       category Category::WEB_DEVELOPMENT
 
       depends_on 'apache2'
 
       def compile
-        Dir.chdir('mod_wsgi-3.4') do
+        Dir.chdir('mod_wsgi-4.4.13') do
           args = [
             "--with-apxs2=#{apache2_dependency.bin_path + "apxs"}",
             # path
@@ -26,7 +26,7 @@ module Autoparts
 
       def install
         prefix_path.mkpath
-        Dir.chdir('mod_wsgi-3.4') do
+        Dir.chdir('mod_wsgi-4.4.13') do
           execute 'mv', '.libs/mod_wsgi.so', prefix_path
         end
       end
